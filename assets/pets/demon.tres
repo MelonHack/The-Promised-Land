@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://baiql6iinf57a"]
+
+[ext_resource type="Texture2D" uid="uid://d0tkde6l6dhbe" path="res://assets/pets/IDLE.png" id="1_62lnr"]
+
+[resource]
+atlas = ExtResource("1_62lnr")
+region = Rect2(0, 7, 79, 57)

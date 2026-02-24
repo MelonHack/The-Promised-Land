@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://dblw3lmjyc8oe"]
+
+[ext_resource type="Texture2D" uid="uid://cjipt3no7cfwf" path="res://assets/pets/Multicolored bird-Sheet.png" id="1_qg52x"]
+
+[resource]
+atlas = ExtResource("1_qg52x")
+region = Rect2(35, 6, 26, 24)

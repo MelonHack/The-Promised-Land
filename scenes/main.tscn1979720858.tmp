@@ -1,0 +1,1958 @@
+[gd_scene format=3 uid="uid://w073vjyu67fp"]
+
+[ext_resource type="Script" uid="uid://3dv8r7xqer3" path="res://scripts/game_manager.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://el1ayjkbaye7" path="res://scripts/pets_and_accessories_manager.gd" id="1_pm3ni"]
+[ext_resource type="Texture2D" uid="uid://q7fw0ylk2q3i" path="res://assets/backgrounds/BG_roadside.png" id="1_tel4y"]
+[ext_resource type="Script" uid="uid://bxmcp567ukna8" path="res://scripts/background.gd" id="2_qkpxi"]
+[ext_resource type="Script" uid="uid://bsp0k5u08sbc2" path="res://scripts/basic_fertilizer_timer.gd" id="3_gdvew"]
+[ext_resource type="Script" uid="uid://bbn2iue0x50d5" path="res://scripts/mineral_mix_timer.gd" id="4_kjtvk"]
+[ext_resource type="Texture2D" uid="uid://c66ab28urxynb" path="res://assets/random/truck-removebg-preview.png" id="5_e755i"]
+[ext_resource type="Script" uid="uid://boiws3oruovkb" path="res://scripts/fetilizer_tab.gd" id="5_jscy8"]
+[ext_resource type="Script" uid="uid://b104l80t20c60" path="res://scripts/nitrogen_rush_timer.gd" id="5_xrs0c"]
+[ext_resource type="Script" uid="uid://c7t5p86ggrgjo" path="res://scripts/map_selection_interface.gd" id="6_jkv2x"]
+[ext_resource type="Script" uid="uid://d4ex1e2wjr0wl" path="res://scripts/toxic_catalyst_timer.gd" id="6_xljpf"]
+[ext_resource type="Script" uid="uid://dn42kou2ybsyf" path="res://scripts/hydro_booster_timer.gd" id="7_j4bwh"]
+[ext_resource type="Script" uid="uid://b1ecbadagqdl3" path="res://scripts/petTab.gd" id="8_dp3eg"]
+[ext_resource type="Script" uid="uid://ddsa6dr0y14xc" path="res://scripts/celestial_infusion_timer.gd" id="8_ksmap"]
+[ext_resource type="Texture2D" uid="uid://bwgr8imauovll" path="res://assets/bgIcons/world.png" id="9_vc5cj"]
+[ext_resource type="Script" uid="uid://c7r133bw068j1" path="res://scripts/pottab.gd" id="10_0ld40"]
+[ext_resource type="Script" uid="uid://b5meppn2vc11a" path="res://scripts/statsLabel.gd" id="10_trceg"]
+[ext_resource type="Script" uid="uid://coijp0tpxis17" path="res://scripts/petslot_1.gd" id="11_2wyq8"]
+[ext_resource type="Texture2D" uid="uid://b6p2wsafa10yi" path="res://assets/bgIcons/roadsideicon.tres" id="11_5he1u"]
+[ext_resource type="Texture2D" uid="uid://ddhr5pmd5qcx" path="res://assets/fertilizer/fertilizer-removebg-preview.png" id="11_bu4jf"]
+[ext_resource type="Script" uid="uid://bay5i58n3g4e6" path="res://scripts/stattab.gd" id="11_dp3eg"]
+[ext_resource type="Texture2D" uid="uid://dgy7brb0ovhw2" path="res://assets/pot/ppott.png" id="11_gqmmt"]
+[ext_resource type="Texture2D" uid="uid://b6cga7gy4yprs" path="res://assets/bgIcons/cityicon.tres" id="12_5poiv"]
+[ext_resource type="Script" uid="uid://d7e7abg27x0o" path="res://scripts/petslot_2.gd" id="12_vxglm"]
+[ext_resource type="Texture2D" uid="uid://cr6cdhy5fpvff" path="res://assets/bgIcons/groveicon.tres" id="13_2cjbq"]
+[ext_resource type="Script" uid="uid://uvhcj1edkr73" path="res://scripts/petslot_3.gd" id="13_2f3dj"]
+[ext_resource type="Texture2D" uid="uid://bj5x0p1w5odan" path="res://assets/fertilizer/T1fertilizer.tres" id="13_o7ddy"]
+[ext_resource type="Texture2D" uid="uid://cgnn655kgwp1w" path="res://assets/fertilizer/T2fertilizer.tres" id="14_0loja"]
+[ext_resource type="Shader" uid="uid://vlkv3stxsby3" path="res://assets/random/rain_and_snow_shader.gdshader" id="14_673bd"]
+[ext_resource type="Texture2D" uid="uid://df1jftso18ijj" path="res://assets/bgIcons/deserticon.tres" id="14_chjal"]
+[ext_resource type="Script" uid="uid://jgsm6qk7cab6" path="res://scripts/petslot_4.gd" id="14_yq6so"]
+[ext_resource type="Texture2D" uid="uid://djuvh646u754v" path="res://assets/bgIcons/plainicon.tres" id="15_cjqg0"]
+[ext_resource type="Texture2D" uid="uid://bagja8267vbo4" path="res://assets/fertilizer/T3fertilizer.tres" id="15_ids8r"]
+[ext_resource type="Texture2D" uid="uid://m67j6j8bgj3u" path="res://assets/fertilizer/T4fertilizer.tres" id="16_dnhof"]
+[ext_resource type="Texture2D" uid="uid://k1d8axu6vitd" path="res://assets/bgIcons/hellicon.tres" id="16_vchkt"]
+[ext_resource type="Texture2D" uid="uid://gj75l3n1uwd8" path="res://assets/weather/sunny.png" id="17_b6ruc"]
+[ext_resource type="Texture2D" uid="uid://cfk3qk47cq50g" path="res://assets/fertilizer/angelic_fertilizer_transparent.png" id="17_dnhof"]
+[ext_resource type="Script" uid="uid://c7ip7iqfagpj2" path="res://scripts/accTab.gd" id="17_muem4"]
+[ext_resource type="Texture2D" uid="uid://c4vl6r38dsbqa" path="res://assets/bgIcons/heavenicon.tres" id="17_txyw0"]
+[ext_resource type="Script" uid="uid://cicbgc08lbfn3" path="res://scripts/weather.gd" id="18_155or"]
+[ext_resource type="Texture2D" uid="uid://cvs0ji6jhsjox" path="res://assets/bgIcons/thepromisedlandicon.tres" id="18_vc5cj"]
+[ext_resource type="Script" uid="uid://c6agt62qg3m64" path="res://scripts/butt_fert_1.gd" id="20_ygd8o"]
+[ext_resource type="Script" uid="uid://nb5iuxqi8ef5" path="res://scripts/butt_fert_2.gd" id="21_2s0kr"]
+[ext_resource type="Texture2D" uid="uid://6htb7x4uakxe" path="res://assets/01_TravelBookLite/Sprites/UI_TravelBook_GamepadMenu01a.png" id="23_tel4y"]
+[ext_resource type="Script" uid="uid://cld1c00lk0hvt" path="res://scripts/butt_fert_3.gd" id="23_xaipn"]
+[ext_resource type="Script" uid="uid://c7fjg05e4opj6" path="res://scripts/butt_fert_4.gd" id="25_ndrjj"]
+[ext_resource type="Script" uid="uid://cmi6n64bt65b" path="res://scripts/researches.gd" id="26_yq6so"]
+[ext_resource type="Script" uid="uid://c4r387xofrvh7" path="res://scripts/butt_fert_5.gd" id="27_ih3m7"]
+[ext_resource type="Texture2D" uid="uid://mpxemdo0oifx" path="res://assets/random/tools.png" id="27_qkpxi"]
+[ext_resource type="Script" uid="uid://ueuatj3l18ij" path="res://scripts/butt_fert_6.gd" id="29_11yus"]
+[ext_resource type="Texture2D" uid="uid://cao8ku0h435pf" path="res://assets/pot/5.png" id="29_cjqg0"]
+[ext_resource type="Texture2D" uid="uid://bw2jh3hdmkb3" path="res://assets/pets/peticon-removebg-preview.png" id="29_t5ykj"]
+[ext_resource type="Texture2D" uid="uid://vbpdue8pnu5p" path="res://assets/pot/7.png" id="30_nvyfr"]
+[ext_resource type="Texture2D" uid="uid://b257nyvsqvroi" path="res://assets/pot/4.png" id="30_vchkt"]
+[ext_resource type="Texture2D" uid="uid://cxmg77c4e134d" path="res://assets/pot/8.png" id="31_ty1g6"]
+[ext_resource type="Texture2D" uid="uid://dvc8fa05e067m" path="res://assets/pot/1.png" id="32_txyw0"]
+[ext_resource type="Texture2D" uid="uid://bgbu7gueiipvk" path="res://assets/pot/3.png" id="32_vc5cj"]
+[ext_resource type="Texture2D" uid="uid://dv1g7opad63yx" path="res://assets/pot/2.png" id="33_txyw0"]
+[ext_resource type="Texture2D" uid="uid://d8cfbur57vcj" path="res://assets/pot/6.png" id="34_vc5cj"]
+[ext_resource type="Texture2D" uid="uid://dn12ynworo3m6" path="res://assets/random/book.png" id="37_vc5cj"]
+[ext_resource type="Texture2D" uid="uid://bok3evx5ohwc0" path="res://assets/01_TravelBookLite/Sprites/UI_TravelBook_IconCross01a.png" id="40_j2jfr"]
+[ext_resource type="Texture2D" uid="uid://ir3iilxwpewo" path="res://assets/01_TravelBookLite/Sprites/UI_TravelBook_Frame01a.png" id="40_vc5cj"]
+[ext_resource type="Texture2D" uid="uid://d35mfo2d4rrlp" path="res://assets/pets/missing.png" id="46_673bd"]
+[ext_resource type="Script" uid="uid://g831srraroa5" path="res://scripts/pp_count.gd" id="48_nvyfr"]
+[ext_resource type="Script" uid="uid://5q4r4b8ac5og" path="res://scripts/available_pet_dropdown.gd" id="50_gr8w0"]
+[ext_resource type="Texture2D" uid="uid://b26gfw8yysfl5" path="res://assets/random/coins.png" id="50_j2jfr"]
+[ext_resource type="Texture2D" uid="uid://b87or5ttl8qrm" path="res://assets/plants/basic.tres" id="51_bjg73"]
+[ext_resource type="Script" uid="uid://3k1mf8rw4e53" path="res://scripts/on_kick_clicked.gd" id="52_akjxb"]
+[ext_resource type="Script" uid="uid://vkky1w000sbs" path="res://scripts/plant_image.gd" id="52_bu4jf"]
+[ext_resource type="Script" uid="uid://dwtsqddy3i7a4" path="res://scripts/butt_p_1.gd" id="53_155or"]
+[ext_resource type="Script" uid="uid://m1bh8dlh3loq" path="res://scripts/butt_res_1.gd" id="55_1epgm"]
+[ext_resource type="Script" uid="uid://4ycsjdwtw54w" path="res://scripts/butt_p_2.gd" id="55_sgvw8"]
+[ext_resource type="Script" uid="uid://j8wo7w4j418u" path="res://scripts/butt_res_2.gd" id="56_152kg"]
+[ext_resource type="Script" uid="uid://wfpi63ap7ib7" path="res://scripts/butt_p_3.gd" id="57_6nfnn"]
+[ext_resource type="Texture2D" uid="uid://cpa7n5fiev2be" path="res://assets/accessories/Gemini_Generated_Image_53ivn753ivn753iv-removebg-preview.png" id="57_augu2"]
+[ext_resource type="Script" uid="uid://cpbhhssljnwms" path="res://scripts/butt_res_3.gd" id="57_r4e17"]
+[ext_resource type="Texture2D" uid="uid://cgcof5qjasvug" path="res://assets/random/lock.png" id="58_e755i"]
+[ext_resource type="Texture2D" uid="uid://bfghoomgdpui5" path="res://assets/accessories/Gemini_Generated_Image_bn63kmbn63kmbn63-removebg-preview.png" id="58_tm6hj"]
+[ext_resource type="Script" uid="uid://osoqb3yfkr26" path="res://scripts/butt_res_4.gd" id="58_y57op"]
+[ext_resource type="Script" uid="uid://ciw2o5hkyqpvm" path="res://scripts/butt_p_4.gd" id="59_4ue30"]
+[ext_resource type="Script" uid="uid://cyq0n1hjypub0" path="res://scripts/butt_res_5.gd" id="59_mlv25"]
+[ext_resource type="Texture2D" uid="uid://c8ueqram04tqt" path="res://assets/accessories/Gemini_Generated_Image_srlmx1srlmx1srlm-removebg-preview.png" id="59_t5ykj"]
+[ext_resource type="Texture2D" uid="uid://brb8ov5ilfq6e" path="res://assets/accessories/Gemini_Generated_Image_qosmhfqosmhfqosm-removebg-preview.png" id="60_e755i"]
+[ext_resource type="Script" uid="uid://jfiink8l8rvu" path="res://scripts/butt_p_5.gd" id="61_k42av"]
+[ext_resource type="Texture2D" uid="uid://b12pfwkcrr2ra" path="res://assets/accessories/Gemini_Generated_Image_x8kpn4x8kpn4x8kp-removebg-preview.png" id="61_ro3en"]
+[ext_resource type="Script" uid="uid://krf2yyiy41f1" path="res://scripts/butt_p_6.gd" id="63_gr8w0"]
+[ext_resource type="Script" uid="uid://dl3x8f1m0likp" path="res://scripts/butt_p_7.gd" id="65_673bd"]
+[ext_resource type="Script" uid="uid://bwm6qsf3vbx8b" path="res://scripts/butt_p_8.gd" id="67_akjxb"]
+[ext_resource type="Script" uid="uid://ch1j8d8o1xj3c" path="res://scripts/light_progress.gd" id="73_4ue30"]
+[ext_resource type="Script" uid="uid://2ciqpk2uqdh0" path="res://scripts/simple.gd" id="73_gr8w0"]
+[ext_resource type="Script" uid="uid://cc4o04xcd8xp4" path="res://scripts/water_progress.gd" id="73_k42av"]
+[ext_resource type="Script" uid="uid://c8js5fv1r1eu3" path="res://scripts/stats_label_right.gd" id="73_sgvw8"]
+[ext_resource type="Script" uid="uid://dp1liuqbxw8dm" path="res://scripts/plant_progress.gd" id="74_6nfnn"]
+[ext_resource type="Script" uid="uid://d2neb4ad4ggn6" path="res://scripts/lock_ver_shoe.gd" id="75_2s0kr"]
+[ext_resource type="Script" uid="uid://dw8tlq8vcdu8w" path="res://scripts/lock_ver_gun.gd" id="78_11yus"]
+[ext_resource type="Script" uid="uid://herk6e4hsxks" path="res://scripts/lock_ver_jersey.gd" id="80_b6ruc"]
+[ext_resource type="Script" uid="uid://jd4uef5jqby" path="res://scripts/lock_ver_fruit.gd" id="82_155or"]
+[ext_resource type="Script" uid="uid://d3yedqy3tuc4t" path="res://scripts/lock_ver_bowtie.gd" id="83_vtx2l"]
+[ext_resource type="AudioStream" uid="uid://dmqt6gaqbkiqr" path="res://assets/pets/sonican-lo-fi-music-loop-sentimental-jazzy-love-473154.mp3" id="99_vrx01"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_akjxb"]
+shader = ExtResource("14_673bd")
+shader_parameter/rain_amount = 50.0
+shader_parameter/near_rain_length = 0.2
+shader_parameter/far_rain_length = 0.1
+shader_parameter/near_rain_width = 0.30500001122762
+shader_parameter/far_rain_width = 0.10000000149012
+shader_parameter/near_rain_transparency = 1.0
+shader_parameter/far_rain_transparency = 0.5
+shader_parameter/rain_color = Color(0.8, 0.8, 0.8, 1)
+shader_parameter/base_rain_speed = 0.5
+shader_parameter/additional_rain_speed = 0.5
+shader_parameter/slant = 0.2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bu4jf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_152kg"]
+bg_color = Color(0.9384497, 0.9384497, 0.9384497, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j2jfr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjg73"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_augu2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tm6hj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kf5aa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t5ykj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e755i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ro3en"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_od4ux"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xhfw6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o7ddy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k42av"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0loja"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ids8r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_akjxb"]
+bg_color = Color(0.26516005, 0.6096977, 0.98350245, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vrx01"]
+bg_color = Color(0.8817743, 0.7775976, 0.14466876, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1uevf"]
+bg_color = Color(0.44258165, 0.9670003, 0.48947996, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1epgm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dnhof"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jkv2x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jbj1t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_muem4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dp3eg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ld40"]
+
+[sub_resource type="Theme" id="Theme_muem4"]
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_jkv2x")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_jbj1t")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_muem4")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_dp3eg")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_0ld40")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1v6qk"]
+
+[node name="main" type="Node2D" unique_id=123427221]
+
+[node name="petsAndAccessoriesManager" type="Node2D" parent="." unique_id=541141479]
+script = ExtResource("1_pm3ni")
+
+[node name="gameManager" type="Node2D" parent="." unique_id=918751629]
+script = ExtResource("1_o5qli")
+
+[node name="timers" type="Node2D" parent="." unique_id=613837150]
+
+[node name="ppGainTimer" type="Timer" parent="timers" unique_id=880306159]
+process_callback = 0
+autostart = true
+
+[node name="weatherChangeTimer" type="Timer" parent="timers" unique_id=1912176463]
+wait_time = 30.0
+autostart = true
+
+[node name="basicFertilizerTimer" type="Timer" parent="timers" unique_id=119834873]
+wait_time = 30.0
+one_shot = true
+script = ExtResource("3_gdvew")
+
+[node name="mineralMixTimer" type="Timer" parent="timers" unique_id=1381298848]
+wait_time = 30.0
+one_shot = true
+script = ExtResource("4_kjtvk")
+
+[node name="nitrogenRushTimer" type="Timer" parent="timers" unique_id=1830640367]
+wait_time = 30.0
+one_shot = true
+script = ExtResource("5_xrs0c")
+
+[node name="toxicCatalystTimer" type="Timer" parent="timers" unique_id=921021130]
+wait_time = 30.0
+one_shot = true
+script = ExtResource("6_xljpf")
+
+[node name="hydroBoosterTimer" type="Timer" parent="timers" unique_id=2135050414]
+wait_time = 30.0
+one_shot = true
+script = ExtResource("7_j4bwh")
+
+[node name="celestialInfusionTimer" type="Timer" parent="timers" unique_id=859846823]
+wait_time = 30.0
+one_shot = true
+script = ExtResource("8_ksmap")
+
+[node name="background" type="Sprite2D" parent="." unique_id=817422183]
+position = Vector2(575, 335)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_tel4y")
+script = ExtResource("2_qkpxi")
+
+[node name="TruckRemovebgPreview" type="Sprite2D" parent="." unique_id=2025419740]
+position = Vector2(541, 445)
+texture = ExtResource("5_e755i")
+
+[node name="plantImage" type="Sprite2D" parent="." unique_id=450790913]
+position = Vector2(554, 490)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("51_bjg73")
+script = ExtResource("52_bu4jf")
+
+[node name="rainShade" type="ColorRect" parent="." unique_id=614830144]
+visible = false
+offset_left = -20.0
+offset_top = -65.0
+offset_right = 1174.0
+offset_bottom = 741.0
+color = Color(0.24356937, 0.24356917, 0.2435692, 0.65882355)
+
+[node name="ColorRect" type="ColorRect" parent="rainShade" unique_id=2028625720]
+material = SubResource("ShaderMaterial_akjxb")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="UI_Manager" type="Node2D" parent="." unique_id=2026150136]
+
+[node name="Control" type="Control" parent="UI_Manager" unique_id=182161667]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ppDisplay" type="Node2D" parent="UI_Manager/Control" unique_id=1339767096]
+position = Vector2(389, 88)
+
+[node name="bg" type="Sprite2D" parent="UI_Manager/Control/ppDisplay" unique_id=1582340097]
+scale = Vector2(6, 6)
+texture = ExtResource("40_vc5cj")
+
+[node name="ppCount" type="Label" parent="UI_Manager/Control/ppDisplay" unique_id=1216564524]
+offset_left = -58.0
+offset_top = -24.0
+offset_right = 82.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 26
+script = ExtResource("48_nvyfr")
+
+[node name="coin" type="Sprite2D" parent="UI_Manager/Control/ppDisplay" unique_id=251587597]
+position = Vector2(-133, -8)
+scale = Vector2(4, 4)
+texture = ExtResource("50_j2jfr")
+
+[node name="eventSection" type="Node2D" parent="UI_Manager/Control" unique_id=370921374]
+position = Vector2(1012, 45)
+
+[node name="event" type="Button" parent="UI_Manager/Control/eventSection" unique_id=318302710]
+offset_left = -71.0
+offset_top = -3.0
+offset_right = 89.0
+offset_bottom = 157.0
+icon = ExtResource("17_b6ruc")
+flat = true
+expand_icon = true
+script = ExtResource("18_155or")
+
+[node name="fertilizerSection" type="Node2D" parent="UI_Manager/Control" unique_id=8747284]
+
+[node name="fertilizer" type="Button" parent="UI_Manager/Control/fertilizerSection" unique_id=1326091331]
+offset_left = 24.0
+offset_top = 459.0
+offset_right = 174.0
+offset_bottom = 609.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_bu4jf")
+icon = ExtResource("11_bu4jf")
+flat = true
+expand_icon = true
+
+[node name="fetilizerTab" type="ScrollContainer" parent="UI_Manager/Control/fertilizerSection" unique_id=2009844695]
+visible = false
+offset_left = 330.0
+offset_top = 46.0
+offset_right = 830.0
+offset_bottom = 546.0
+vertical_scroll_mode = 3
+script = ExtResource("5_jscy8")
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/fertilizerSection/fetilizerTab" unique_id=1948750782]
+custom_minimum_size = Vector2(500, 760)
+layout_mode = 2
+color = Color(1, 1, 1, 0.65882355)
+
+[node name="Control" type="Control" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect" unique_id=1193102268]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control" unique_id=633226856]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_fert1" type="Button" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control" unique_id=1133978729]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 16.0
+offset_right = 478.0
+offset_bottom = 96.0
+text = "Cost:
+120 PP"
+script = ExtResource("20_ygd8o")
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control" unique_id=1226545749]
+position = Vector2(52, 51)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("11_bu4jf")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control" unique_id=749408390]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 22.0
+offset_right = 294.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+text = "Basic Composter
+-PP gain ↑
+-Light ↓"
+
+[node name="Control2" type="Control" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect" unique_id=2017862711]
+anchors_preset = 0
+offset_top = 125.0
+offset_right = 40.0
+offset_bottom = 165.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control2" unique_id=1855114622]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_fert2" type="Button" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control2" unique_id=306733468]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 16.0
+offset_right = 478.0
+offset_bottom = 96.0
+text = "Cost:
+400 PP"
+script = ExtResource("21_2s0kr")
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control2" unique_id=968112993]
+position = Vector2(52, 51)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("13_o7ddy")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control2" unique_id=166265885]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 22.0
+offset_right = 294.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+text = "Tier I Fertilizer--
+Mineral Mix
+-Fertilizer Effect ↑
+-Water ↓"
+
+[node name="Control3" type="Control" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect" unique_id=1058839140]
+anchors_preset = 0
+offset_top = 250.0
+offset_right = 40.0
+offset_bottom = 290.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control3" unique_id=391018738]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_fert3" type="Button" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control3" unique_id=1554927520]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 16.0
+offset_right = 478.0
+offset_bottom = 96.0
+text = "Cost:
+1200 PP"
+script = ExtResource("23_xaipn")
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control3" unique_id=1818063810]
+position = Vector2(52, 51)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("16_dnhof")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control3" unique_id=1354848212]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 22.0
+offset_right = 294.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+text = "Tier II Fertilizer--
+Nitrogen Rush
+-PP gain ↑↑
+-Harmful Gas ↑"
+
+[node name="Control4" type="Control" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect" unique_id=1289201622]
+anchors_preset = 0
+offset_top = 375.0
+offset_right = 40.0
+offset_bottom = 415.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control4" unique_id=942811558]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_fert4" type="Button" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control4" unique_id=716285604]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 16.0
+offset_right = 478.0
+offset_bottom = 96.0
+text = "Cost:
+3500 PP"
+script = ExtResource("25_ndrjj")
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control4" unique_id=559515687]
+position = Vector2(52, 51)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("15_ids8r")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control4" unique_id=2079725121]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 22.0
+offset_right = 294.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+text = "Tier III Fertilizer--
+Toxic Catalyst
+-PP gain ↑↑↑ 
+-Water ↓↓
+-Harmful Gas ↑↑↑"
+
+[node name="Control5" type="Control" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect" unique_id=1445973060]
+anchors_preset = 0
+offset_top = 500.0
+offset_right = 40.0
+offset_bottom = 540.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control5" unique_id=952723203]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_fert5" type="Button" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control5" unique_id=1290590454]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 16.0
+offset_right = 478.0
+offset_bottom = 96.0
+text = "Cost:
+7000 PP"
+script = ExtResource("27_ih3m7")
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control5" unique_id=1410894617]
+position = Vector2(52, 51)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("14_0loja")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control5" unique_id=2064825210]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 22.0
+offset_right = 294.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+text = "Tier IV Fertilizer--
+Hydro Booster
+-PP gain ↑↑   
+-Water ↑ 
+-Electricity Cost ↑"
+
+[node name="Control6" type="Control" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect" unique_id=589384413]
+anchors_preset = 0
+offset_top = 625.0
+offset_right = 40.0
+offset_bottom = 665.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control6" unique_id=704973410]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_fert6" type="Button" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control6" unique_id=1233400504]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 16.0
+offset_right = 478.0
+offset_bottom = 96.0
+text = "Cost:
+15000 PP"
+script = ExtResource("29_11yus")
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control6" unique_id=2101455727]
+position = Vector2(52, 51)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("17_dnhof")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control6" unique_id=1359684219]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 7.0
+offset_right = 294.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+text = "Angelic Fertilizer--
+Celestial Infusion
+-PP gain ↑↑↑  
+-Light ↑
+-Harmful Gas ↑↑
+-Electricity Cost ↑"
+
+[node name="closebutton" type="Button" parent="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect" unique_id=735263714]
+layout_mode = 0
+offset_left = 446.0
+offset_top = 2.0
+offset_right = 496.0
+offset_bottom = 52.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_j2jfr")
+icon = ExtResource("40_j2jfr")
+flat = true
+expand_icon = true
+
+[node name="mapSection" type="Node2D" parent="UI_Manager/Control" unique_id=1240821816]
+
+[node name="map" type="Button" parent="UI_Manager/Control/mapSection" unique_id=2085029280]
+offset_left = 977.0
+offset_top = 250.0
+offset_right = 1077.0
+offset_bottom = 350.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_bjg73")
+icon = ExtResource("9_vc5cj")
+flat = true
+expand_icon = true
+
+[node name="mapSelection" type="Control" parent="UI_Manager/Control/mapSection" unique_id=951756310]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 230.0
+offset_top = 130.0
+offset_right = 940.0
+offset_bottom = 474.0
+script = ExtResource("6_jkv2x")
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/mapSection/mapSelection" unique_id=1694726053]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 5.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.65882355)
+
+[node name="Roadside" type="Button" parent="UI_Manager/Control/mapSection/mapSelection" unique_id=302337160]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_augu2")
+icon = ExtResource("11_5he1u")
+flat = true
+expand_icon = true
+
+[node name="City" type="Button" parent="UI_Manager/Control/mapSection/mapSelection" unique_id=646066544]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 0
+offset_left = 185.0
+offset_right = 193.0
+offset_bottom = 8.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_tm6hj")
+icon = ExtResource("12_5poiv")
+flat = true
+expand_icon = true
+
+[node name="Grove" type="Button" parent="UI_Manager/Control/mapSection/mapSelection" unique_id=857323052]
+layout_mode = 0
+offset_left = 370.0
+offset_right = 530.0
+offset_bottom = 160.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_kf5aa")
+icon = ExtResource("13_2cjbq")
+flat = true
+expand_icon = true
+
+[node name="Desert" type="Button" parent="UI_Manager/Control/mapSection/mapSelection" unique_id=658290472]
+layout_mode = 0
+offset_left = 555.0
+offset_right = 715.0
+offset_bottom = 160.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_t5ykj")
+icon = ExtResource("14_chjal")
+flat = true
+expand_icon = true
+
+[node name="Plain" type="Button" parent="UI_Manager/Control/mapSection/mapSelection" unique_id=2122518624]
+layout_mode = 0
+offset_top = 188.0
+offset_right = 160.0
+offset_bottom = 348.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_e755i")
+icon = ExtResource("15_cjqg0")
+flat = true
+expand_icon = true
+
+[node name="Hell" type="Button" parent="UI_Manager/Control/mapSection/mapSelection" unique_id=1807213699]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 188.0
+offset_right = 345.0
+offset_bottom = 348.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_ro3en")
+icon = ExtResource("16_vchkt")
+flat = true
+expand_icon = true
+
+[node name="Heaven" type="Button" parent="UI_Manager/Control/mapSection/mapSelection" unique_id=2031345142]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 188.0
+offset_right = 530.0
+offset_bottom = 348.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_od4ux")
+icon = ExtResource("17_txyw0")
+flat = true
+expand_icon = true
+
+[node name="ThePromisedLand" type="Button" parent="UI_Manager/Control/mapSection/mapSelection" unique_id=125444972]
+layout_mode = 0
+offset_left = 555.0
+offset_top = 188.0
+offset_right = 715.0
+offset_bottom = 348.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_xhfw6")
+icon = ExtResource("18_vc5cj")
+flat = true
+expand_icon = true
+
+[node name="petSection" type="Node2D" parent="UI_Manager/Control" unique_id=458342032]
+
+[node name="pet" type="Button" parent="UI_Manager/Control/petSection" unique_id=21667604]
+offset_left = 960.0
+offset_top = 365.0
+offset_right = 1090.0
+offset_bottom = 495.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_o7ddy")
+icon = ExtResource("29_t5ykj")
+flat = true
+expand_icon = true
+
+[node name="petTab" type="ColorRect" parent="UI_Manager/Control/petSection" unique_id=2041751032]
+visible = false
+offset_left = 172.0
+offset_top = 123.0
+offset_right = 981.0
+offset_bottom = 515.0
+color = Color(1, 1, 1, 0.65882355)
+script = ExtResource("8_dp3eg")
+
+[node name="petslot1" type="Button" parent="UI_Manager/Control/petSection/petTab" unique_id=1692816027]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 112.0
+offset_right = 180.0
+offset_bottom = 272.0
+icon = ExtResource("46_673bd")
+expand_icon = true
+script = ExtResource("11_2wyq8")
+
+[node name="closepet1" type="Button" parent="UI_Manager/Control/petSection/petTab" unique_id=2035394681]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 103.0
+offset_right = 190.0
+offset_bottom = 125.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_k42av")
+icon = ExtResource("40_j2jfr")
+flat = true
+expand_icon = true
+
+[node name="petslot2" type="Button" parent="UI_Manager/Control/petSection/petTab" unique_id=1468424033]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 112.0
+offset_right = 380.0
+offset_bottom = 272.0
+icon = ExtResource("46_673bd")
+expand_icon = true
+script = ExtResource("12_vxglm")
+
+[node name="closepet2" type="Button" parent="UI_Manager/Control/petSection/petTab" unique_id=1542092756]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 102.0
+offset_right = 390.0
+offset_bottom = 124.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_k42av")
+icon = ExtResource("40_j2jfr")
+flat = true
+expand_icon = true
+
+[node name="petslot3" type="Button" parent="UI_Manager/Control/petSection/petTab" unique_id=894129985]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 112.0
+offset_right = 580.0
+offset_bottom = 272.0
+icon = ExtResource("46_673bd")
+expand_icon = true
+script = ExtResource("13_2f3dj")
+
+[node name="closepet3" type="Button" parent="UI_Manager/Control/petSection/petTab" unique_id=1877872456]
+layout_mode = 0
+offset_left = 568.0
+offset_top = 100.0
+offset_right = 590.0
+offset_bottom = 122.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_k42av")
+icon = ExtResource("40_j2jfr")
+flat = true
+expand_icon = true
+
+[node name="petslot4" type="Button" parent="UI_Manager/Control/petSection/petTab" unique_id=1093098343]
+layout_mode = 0
+offset_left = 620.0
+offset_top = 112.0
+offset_right = 780.0
+offset_bottom = 272.0
+icon = ExtResource("46_673bd")
+expand_icon = true
+script = ExtResource("14_yq6so")
+
+[node name="closepet4" type="Button" parent="UI_Manager/Control/petSection/petTab" unique_id=105872539]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 102.0
+offset_right = 790.0
+offset_bottom = 124.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_k42av")
+icon = ExtResource("40_j2jfr")
+flat = true
+expand_icon = true
+
+[node name="availablePetDropdown" type="OptionButton" parent="UI_Manager/Control/petSection/petTab" unique_id=7817194]
+custom_minimum_size = Vector2(200, 30)
+layout_mode = 0
+offset_left = 477.0
+offset_top = 28.0
+offset_right = 509.0
+offset_bottom = 48.0
+toggle_mode = false
+allow_reselect = true
+script = ExtResource("50_gr8w0")
+
+[node name="closebutton" type="Button" parent="UI_Manager/Control/petSection/petTab" unique_id=697300862]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 18.0
+offset_right = 783.0
+offset_bottom = 68.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_j2jfr")
+icon = ExtResource("40_j2jfr")
+flat = true
+expand_icon = true
+
+[node name="onKickClicked" type="Node2D" parent="UI_Manager/Control/petSection" unique_id=1658885821]
+script = ExtResource("52_akjxb")
+
+[node name="potSection" type="Node2D" parent="UI_Manager/Control" unique_id=1437398738]
+
+[node name="pot" type="Button" parent="UI_Manager/Control/potSection" unique_id=1002007848]
+offset_left = 24.0
+offset_top = 198.0
+offset_right = 174.00006
+offset_bottom = 348.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_0loja")
+icon = ExtResource("11_gqmmt")
+flat = true
+expand_icon = true
+
+[node name="pottab" type="ScrollContainer" parent="UI_Manager/Control/potSection" unique_id=977276953]
+visible = false
+custom_minimum_size = Vector2(500, 500)
+offset_left = 343.0
+offset_top = 46.0
+offset_right = 843.0
+offset_bottom = 546.0
+vertical_scroll_mode = 3
+script = ExtResource("10_0ld40")
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/potSection/pottab" unique_id=1794141563]
+custom_minimum_size = Vector2(500, 1010)
+layout_mode = 2
+color = Color(1, 1, 1, 0.65882355)
+
+[node name="basicpot" type="Control" parent="UI_Manager/Control/potSection/pottab/ColorRect" unique_id=1231532125]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/potSection/pottab/ColorRect/basicpot" unique_id=227561194]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_p1" type="Button" parent="UI_Manager/Control/potSection/pottab/ColorRect/basicpot" unique_id=855846194]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 24.0
+offset_right = 470.0
+offset_bottom = 104.0
+text = "Cost:
+0 PP"
+script = ExtResource("53_155or")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/potSection/pottab/ColorRect/basicpot" unique_id=2936712]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 43.0
+offset_right = 329.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.60324603, 0.6032463, 1.92523e-07, 1)
+theme_override_font_sizes/font_size = 32
+text = "Basic Pot"
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/potSection/pottab/ColorRect/basicpot" unique_id=1758347487]
+position = Vector2(65, 65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("29_cjqg0")
+
+[node name="copperpot" type="Control" parent="UI_Manager/Control/potSection/pottab/ColorRect" unique_id=1115014787]
+anchors_preset = 0
+offset_top = 125.0
+offset_right = 40.0
+offset_bottom = 165.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/potSection/pottab/ColorRect/copperpot" unique_id=1718919168]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_p2" type="Button" parent="UI_Manager/Control/potSection/pottab/ColorRect/copperpot" unique_id=821940118]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 24.0
+offset_right = 470.0
+offset_bottom = 104.0
+text = "Cost:
+100 PP"
+script = ExtResource("55_sgvw8")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/potSection/pottab/ColorRect/copperpot" unique_id=1342770385]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 43.0
+offset_right = 329.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.60324603, 0.6032463, 1.92523e-07, 1)
+theme_override_font_sizes/font_size = 32
+text = "Copper Pot"
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/potSection/pottab/ColorRect/copperpot" unique_id=1455075482]
+position = Vector2(65, 65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("30_vchkt")
+
+[node name="claypot" type="Control" parent="UI_Manager/Control/potSection/pottab/ColorRect" unique_id=1329701622]
+anchors_preset = 0
+offset_top = 250.0
+offset_right = 40.0
+offset_bottom = 290.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/potSection/pottab/ColorRect/claypot" unique_id=1141234303]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_p3" type="Button" parent="UI_Manager/Control/potSection/pottab/ColorRect/claypot" unique_id=1176726343]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 24.0
+offset_right = 470.0
+offset_bottom = 104.0
+text = "Cost:
+300 PP"
+script = ExtResource("57_6nfnn")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/potSection/pottab/ColorRect/claypot" unique_id=1428267510]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 43.0
+offset_right = 329.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.60324603, 0.6032463, 1.92523e-07, 1)
+theme_override_font_sizes/font_size = 32
+text = "Clay Pot"
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/potSection/pottab/ColorRect/claypot" unique_id=1491496641]
+position = Vector2(65, 65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("30_nvyfr")
+
+[node name="mechanicalpot" type="Control" parent="UI_Manager/Control/potSection/pottab/ColorRect" unique_id=2113239631]
+anchors_preset = 0
+offset_top = 375.0
+offset_right = 40.0
+offset_bottom = 415.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/potSection/pottab/ColorRect/mechanicalpot" unique_id=1274896784]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_p4" type="Button" parent="UI_Manager/Control/potSection/pottab/ColorRect/mechanicalpot" unique_id=801992926]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 24.0
+offset_right = 470.0
+offset_bottom = 104.0
+text = "Cost:
+1200 PP"
+script = ExtResource("59_4ue30")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/potSection/pottab/ColorRect/mechanicalpot" unique_id=1823499687]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 43.0
+offset_right = 329.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.60324603, 0.6032463, 1.92523e-07, 1)
+theme_override_font_sizes/font_size = 32
+text = "Mechanical 
+Pot"
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/potSection/pottab/ColorRect/mechanicalpot" unique_id=1753787461]
+position = Vector2(65, 65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("32_vc5cj")
+
+[node name="chineseyuanpot" type="Control" parent="UI_Manager/Control/potSection/pottab/ColorRect" unique_id=1700705832]
+anchors_preset = 0
+offset_top = 500.0
+offset_right = 40.0
+offset_bottom = 540.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/potSection/pottab/ColorRect/chineseyuanpot" unique_id=1991233406]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_p5" type="Button" parent="UI_Manager/Control/potSection/pottab/ColorRect/chineseyuanpot" unique_id=298565759]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 24.0
+offset_right = 470.0
+offset_bottom = 104.0
+text = "Cost:
+4000 PP"
+script = ExtResource("61_k42av")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/potSection/pottab/ColorRect/chineseyuanpot" unique_id=560013203]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 43.0
+offset_right = 329.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.60324603, 0.6032463, 1.92523e-07, 1)
+theme_override_font_sizes/font_size = 32
+text = "Chinese 
+Yuan Pot"
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/potSection/pottab/ColorRect/chineseyuanpot" unique_id=1390407659]
+position = Vector2(65, 65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("32_txyw0")
+
+[node name="demonicpotofgreed" type="Control" parent="UI_Manager/Control/potSection/pottab/ColorRect" unique_id=578223328]
+anchors_preset = 0
+offset_top = 625.0
+offset_right = 40.0
+offset_bottom = 665.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/potSection/pottab/ColorRect/demonicpotofgreed" unique_id=2008652682]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_p6" type="Button" parent="UI_Manager/Control/potSection/pottab/ColorRect/demonicpotofgreed" unique_id=1636045923]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 24.0
+offset_right = 470.0
+offset_bottom = 104.0
+text = "Cost:
+9000 PP"
+script = ExtResource("63_gr8w0")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/potSection/pottab/ColorRect/demonicpotofgreed" unique_id=198512020]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 43.0
+offset_right = 329.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.60324603, 0.6032463, 1.92523e-07, 1)
+theme_override_font_sizes/font_size = 32
+text = "Elderitch 
+Pot of Greed"
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/potSection/pottab/ColorRect/demonicpotofgreed" unique_id=17767605]
+position = Vector2(65, 65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("33_txyw0")
+
+[node name="angelicpotoflight" type="Control" parent="UI_Manager/Control/potSection/pottab/ColorRect" unique_id=1820272748]
+anchors_preset = 0
+offset_top = 750.0
+offset_right = 40.0
+offset_bottom = 790.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/potSection/pottab/ColorRect/angelicpotoflight" unique_id=983862291]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_p7" type="Button" parent="UI_Manager/Control/potSection/pottab/ColorRect/angelicpotoflight" unique_id=1020422322]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 24.0
+offset_right = 470.0
+offset_bottom = 104.0
+text = "Cost:
+12000 PP"
+script = ExtResource("65_673bd")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/potSection/pottab/ColorRect/angelicpotoflight" unique_id=717153475]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 43.0
+offset_right = 329.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.60324603, 0.6032463, 1.92523e-07, 1)
+theme_override_font_sizes/font_size = 32
+text = "Angelic Pot
+of Light"
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/potSection/pottab/ColorRect/angelicpotoflight" unique_id=1381832270]
+position = Vector2(65, 65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("34_vc5cj")
+
+[node name="potofthepromisedland" type="Control" parent="UI_Manager/Control/potSection/pottab/ColorRect" unique_id=1739775854]
+anchors_preset = 0
+offset_top = 875.0
+offset_right = 40.0
+offset_bottom = 915.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/potSection/pottab/ColorRect/potofthepromisedland" unique_id=1562434493]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 130.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="butt_p8" type="Button" parent="UI_Manager/Control/potSection/pottab/ColorRect/potofthepromisedland" unique_id=1176838398]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 24.0
+offset_right = 470.0
+offset_bottom = 104.0
+text = "Cost:
+35000 PP"
+script = ExtResource("67_akjxb")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/potSection/pottab/ColorRect/potofthepromisedland" unique_id=1707627249]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 43.0
+offset_right = 329.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.60324603, 0.6032463, 1.92523e-07, 1)
+theme_override_font_sizes/font_size = 32
+text = "Pot of the 
+Promised Land"
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/Control/potSection/pottab/ColorRect/potofthepromisedland" unique_id=2127797038]
+position = Vector2(65, 65)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("31_ty1g6")
+
+[node name="closebutton" type="Button" parent="UI_Manager/Control/potSection/pottab/ColorRect" unique_id=564092470]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 2.0
+offset_right = 497.0
+offset_bottom = 52.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_j2jfr")
+icon = ExtResource("40_j2jfr")
+flat = true
+expand_icon = true
+
+[node name="statsSection" type="Node2D" parent="UI_Manager/Control" unique_id=952210848]
+
+[node name="stats" type="Button" parent="UI_Manager/Control/statsSection" unique_id=1452373811]
+offset_left = 23.000004
+offset_top = 25.0
+offset_right = 173.0
+offset_bottom = 175.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_ids8r")
+icon = ExtResource("37_vc5cj")
+flat = true
+expand_icon = true
+
+[node name="stattab" type="ColorRect" parent="UI_Manager/Control/statsSection" unique_id=1415319723]
+visible = false
+offset_left = 280.0
+offset_top = 75.0
+offset_right = 920.0
+offset_bottom = 435.0
+color = Color(1, 1, 1, 0.65882355)
+script = ExtResource("11_dp3eg")
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/statsSection/stattab" unique_id=1745965453]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 620.0
+offset_bottom = 340.0
+
+[node name="statsLabelLeft" type="Label" parent="UI_Manager/Control/statsSection/stattab" unique_id=21085225]
+visible = false
+layout_mode = 0
+offset_left = 44.0
+offset_top = 40.0
+offset_right = 84.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+script = ExtResource("10_trceg")
+
+[node name="statsLabelRight" type="Label" parent="UI_Manager/Control/statsSection/stattab" unique_id=1337396272]
+visible = false
+layout_mode = 0
+offset_left = 344.0
+offset_top = 40.0
+offset_right = 384.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+script = ExtResource("73_sgvw8")
+
+[node name="simple" type="Control" parent="UI_Manager/Control/statsSection/stattab" unique_id=628751004]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("73_gr8w0")
+
+[node name="water" type="Control" parent="UI_Manager/Control/statsSection/stattab/simple" unique_id=1038341514]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="water_progress" type="ProgressBar" parent="UI_Manager/Control/statsSection/stattab/simple/water" unique_id=1479416276]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 77.0
+offset_right = 510.0
+offset_bottom = 104.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_akjxb")
+show_percentage = false
+script = ExtResource("73_k42av")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/statsSection/stattab/simple/water" unique_id=1965631092]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 74.0
+offset_right = 191.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Water Quality"
+
+[node name="light" type="Control" parent="UI_Manager/Control/statsSection/stattab/simple" unique_id=2020396646]
+anchors_preset = 0
+offset_top = 83.0
+offset_right = 40.0
+offset_bottom = 123.0
+
+[node name="light_progress" type="ProgressBar" parent="UI_Manager/Control/statsSection/stattab/simple/light" unique_id=257665728]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 77.0
+offset_right = 510.0
+offset_bottom = 104.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_vrx01")
+show_percentage = false
+script = ExtResource("73_4ue30")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/statsSection/stattab/simple/light" unique_id=374872057]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 74.0
+offset_right = 191.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Light Quality"
+
+[node name="plant" type="Control" parent="UI_Manager/Control/statsSection/stattab/simple" unique_id=2142826096]
+anchors_preset = 0
+offset_top = 166.0
+offset_right = 40.0
+offset_bottom = 206.0
+
+[node name="plant_progress" type="ProgressBar" parent="UI_Manager/Control/statsSection/stattab/simple/plant" unique_id=153980015]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 77.0
+offset_right = 510.0
+offset_bottom = 104.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_1uevf")
+value = 50.0
+show_percentage = false
+script = ExtResource("74_6nfnn")
+
+[node name="Label" type="Label" parent="UI_Manager/Control/statsSection/stattab/simple/plant" unique_id=104022297]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 74.0
+offset_right = 191.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Plant Quality"
+
+[node name="details" type="Button" parent="UI_Manager/Control/statsSection/stattab" unique_id=943924427]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 237.0
+offset_right = 612.0
+offset_bottom = 297.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_1epgm")
+icon = ExtResource("23_tel4y")
+flat = true
+expand_icon = true
+
+[node name="closebutton" type="Button" parent="UI_Manager/Control/statsSection/stattab" unique_id=1824469749]
+layout_mode = 0
+offset_left = 571.0
+offset_top = 18.0
+offset_right = 621.0
+offset_bottom = 68.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_j2jfr")
+icon = ExtResource("40_j2jfr")
+flat = true
+expand_icon = true
+
+[node name="truckSection" type="Node2D" parent="UI_Manager/Control" unique_id=1584649485]
+
+[node name="truck" type="Button" parent="UI_Manager/Control/truckSection" unique_id=1038815221]
+offset_left = 50.0
+offset_top = 343.0
+offset_right = 150.0
+offset_bottom = 443.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_dnhof")
+icon = ExtResource("27_qkpxi")
+flat = true
+expand_icon = true
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/truckSection" unique_id=520938297]
+visible = false
+custom_minimum_size = Vector2(500, 520)
+offset_left = 350.0
+offset_top = 46.0
+offset_right = 850.0
+offset_bottom = 566.0
+theme = SubResource("Theme_muem4")
+color = Color(1, 1, 1, 0.65882355)
+script = ExtResource("26_yq6so")
+
+[node name="airFiltration1" type="Control" parent="UI_Manager/Control/truckSection/ColorRect" unique_id=1290893713]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/truckSection/ColorRect/airFiltration1" unique_id=1293253865]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 100.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="researchProgress" type="ProgressBar" parent="UI_Manager/Control/truckSection/ColorRect/airFiltration1" unique_id=486771933]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 47.0
+offset_right = 211.0
+offset_bottom = 74.0
+show_percentage = false
+
+[node name="researchName" type="Label" parent="UI_Manager/Control/truckSection/ColorRect/airFiltration1" unique_id=1079352785]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 24.0
+offset_right = 219.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Air Filtration I"
+
+[node name="butt_res1" type="Button" parent="UI_Manager/Control/truckSection/ColorRect/airFiltration1" unique_id=1816697042]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 23.0
+offset_right = 417.0
+offset_bottom = 79.0
+text = "Cost:
+1200PP"
+script = ExtResource("55_1epgm")
+
+[node name="airFiltration2" type="Control" parent="UI_Manager/Control/truckSection/ColorRect" unique_id=1075222094]
+anchors_preset = 0
+offset_top = 100.0
+offset_right = 40.0
+offset_bottom = 140.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/truckSection/ColorRect/airFiltration2" unique_id=1065441797]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 100.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="researchProgress" type="ProgressBar" parent="UI_Manager/Control/truckSection/ColorRect/airFiltration2" unique_id=491375715]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 47.0
+offset_right = 211.0
+offset_bottom = 74.0
+show_percentage = false
+
+[node name="researchName" type="Label" parent="UI_Manager/Control/truckSection/ColorRect/airFiltration2" unique_id=595519665]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 24.0
+offset_right = 219.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Ait Filtration II"
+
+[node name="butt_res2" type="Button" parent="UI_Manager/Control/truckSection/ColorRect/airFiltration2" unique_id=676156886]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 23.0
+offset_right = 417.0
+offset_bottom = 79.0
+text = "Cost:
+6000PP"
+script = ExtResource("56_152kg")
+
+[node name="efficientWiring1" type="Control" parent="UI_Manager/Control/truckSection/ColorRect" unique_id=818868089]
+anchors_preset = 0
+offset_top = 200.0
+offset_right = 40.0
+offset_bottom = 240.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/truckSection/ColorRect/efficientWiring1" unique_id=55662296]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 100.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="researchProgress" type="ProgressBar" parent="UI_Manager/Control/truckSection/ColorRect/efficientWiring1" unique_id=36010924]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 47.0
+offset_right = 211.0
+offset_bottom = 74.0
+show_percentage = false
+
+[node name="researchName" type="Label" parent="UI_Manager/Control/truckSection/ColorRect/efficientWiring1" unique_id=1891924546]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 24.0
+offset_right = 219.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Efficient Wiring I"
+
+[node name="butt_res3" type="Button" parent="UI_Manager/Control/truckSection/ColorRect/efficientWiring1" unique_id=2031796616]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 23.0
+offset_right = 417.0
+offset_bottom = 79.0
+text = "Cost:
+800PP"
+script = ExtResource("57_r4e17")
+
+[node name="efficientWiring2" type="Control" parent="UI_Manager/Control/truckSection/ColorRect" unique_id=487067397]
+anchors_preset = 0
+offset_top = 300.0
+offset_right = 40.0
+offset_bottom = 340.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/truckSection/ColorRect/efficientWiring2" unique_id=458982388]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 100.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="researchProgress" type="ProgressBar" parent="UI_Manager/Control/truckSection/ColorRect/efficientWiring2" unique_id=1277823071]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 47.0
+offset_right = 211.0
+offset_bottom = 74.0
+show_percentage = false
+
+[node name="researchName" type="Label" parent="UI_Manager/Control/truckSection/ColorRect/efficientWiring2" unique_id=1126741996]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 24.0
+offset_right = 219.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Efficient Wiring II"
+
+[node name="butt_res4" type="Button" parent="UI_Manager/Control/truckSection/ColorRect/efficientWiring2" unique_id=851865039]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 23.0
+offset_right = 417.0
+offset_bottom = 79.0
+text = "Cost:
+4000PP"
+script = ExtResource("58_y57op")
+
+[node name="advancedGrowLamps" type="Control" parent="UI_Manager/Control/truckSection/ColorRect" unique_id=1142133605]
+anchors_preset = 0
+offset_top = 400.0
+offset_right = 40.0
+offset_bottom = 440.0
+
+[node name="Panel" type="Panel" parent="UI_Manager/Control/truckSection/ColorRect/advancedGrowLamps" unique_id=1854492483]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 100.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_152kg")
+
+[node name="researchProgress" type="ProgressBar" parent="UI_Manager/Control/truckSection/ColorRect/advancedGrowLamps" unique_id=1257122878]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 47.0
+offset_right = 211.0
+offset_bottom = 74.0
+show_percentage = false
+
+[node name="researchName" type="Label" parent="UI_Manager/Control/truckSection/ColorRect/advancedGrowLamps" unique_id=1192196581]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 24.0
+offset_right = 219.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Advanced Grow Lamps"
+
+[node name="butt_res5" type="Button" parent="UI_Manager/Control/truckSection/ColorRect/advancedGrowLamps" unique_id=1855374282]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 23.0
+offset_right = 417.0
+offset_bottom = 79.0
+text = "Cost:
+3500PP"
+script = ExtResource("59_mlv25")
+
+[node name="closebutton" type="Button" parent="UI_Manager/Control/truckSection/ColorRect" unique_id=830465826]
+layout_mode = 0
+offset_left = 443.0
+offset_top = 6.0
+offset_right = 493.0
+offset_bottom = 56.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_j2jfr")
+icon = ExtResource("40_j2jfr")
+flat = true
+expand_icon = true
+
+[node name="accessoriesSection" type="Node2D" parent="UI_Manager/Control" unique_id=1786116738]
+
+[node name="accessories" type="Button" parent="UI_Manager/Control/accessoriesSection" unique_id=1984994406]
+offset_left = 952.0
+offset_top = 498.0
+offset_right = 1102.0
+offset_bottom = 648.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_1v6qk")
+icon = ExtResource("61_ro3en")
+flat = true
+expand_icon = true
+
+[node name="accTab" type="Control" parent="UI_Manager/Control/accessoriesSection" unique_id=1981650514]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 185.0
+offset_top = 66.0
+offset_right = 992.0
+offset_bottom = 559.0
+script = ExtResource("17_muem4")
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab" unique_id=1764538898]
+layout_mode = 0
+offset_right = 743.0
+offset_bottom = 493.0
+color = Color(1, 1, 1, 0.65882355)
+
+[node name="shoe" type="Control" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect" unique_id=1373973457]
+anchors_preset = 0
+offset_left = -80.0
+offset_top = -3.0
+offset_right = -40.0
+offset_bottom = 37.0
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/shoe" unique_id=1464940109]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 350.0
+offset_right = 483.0
+offset_bottom = 470.0
+
+[node name="shoes" type="Button" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/shoe" unique_id=169581391]
+layout_mode = 0
+offset_left = 271.0
+offset_top = 297.0
+offset_right = 496.0
+offset_bottom = 522.0
+icon = ExtResource("57_augu2")
+flat = true
+expand_icon = true
+
+[node name="lockVer_shoe" type="Control" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/shoe" unique_id=1344097043]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("75_2s0kr")
+
+[node name="ColorRect2" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/shoe/lockVer_shoe" unique_id=315446995]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 350.0
+offset_right = 483.0
+offset_bottom = 470.0
+color = Color(0.085983776, 0.08598376, 0.08598376, 0.65882355)
+
+[node name="TextureRect" type="TextureRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/shoe/lockVer_shoe" unique_id=2061842794]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 386.0
+offset_right = 402.0
+offset_bottom = 426.0
+texture = ExtResource("58_e755i")
+
+[node name="gun" type="Control" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect" unique_id=71136146]
+anchors_preset = 0
+offset_left = -76.0
+offset_top = 3.0
+offset_right = -36.0
+offset_bottom = 43.0
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/gun" unique_id=16031593]
+layout_mode = 0
+offset_left = 515.0
+offset_top = 154.0
+offset_right = 804.0
+offset_bottom = 332.0
+
+[node name="gun" type="Button" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/gun" unique_id=858775831]
+layout_mode = 0
+offset_left = 508.0
+offset_top = 91.0
+offset_right = 808.0
+offset_bottom = 391.0
+icon = ExtResource("58_tm6hj")
+flat = true
+expand_icon = true
+
+[node name="lockVer_gun" type="Control" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/gun" unique_id=338856570]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("78_11yus")
+
+[node name="ColorRect2" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/gun/lockVer_gun" unique_id=1983558400]
+layout_mode = 0
+offset_left = 515.0
+offset_top = 154.0
+offset_right = 804.0
+offset_bottom = 332.0
+color = Color(0.08627451, 0.08627451, 0.08627451, 0.65882355)
+
+[node name="TextureRect" type="TextureRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/gun/lockVer_gun" unique_id=1765855769]
+layout_mode = 0
+offset_left = 641.0
+offset_top = 226.0
+offset_right = 681.0
+offset_bottom = 266.0
+texture = ExtResource("58_e755i")
+
+[node name="jersey" type="Control" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect" unique_id=781044869]
+anchors_preset = 0
+offset_left = -97.0
+offset_top = 1.0
+offset_right = -57.0
+offset_bottom = 41.0
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/jersey" unique_id=430703851]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 107.0
+offset_right = 520.0
+offset_bottom = 337.0
+
+[node name="jersey" type="Button" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/jersey" unique_id=2014609374]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 71.0
+offset_right = 538.0
+offset_bottom = 371.0
+icon = ExtResource("59_t5ykj")
+flat = true
+expand_icon = true
+
+[node name="lockVer_jersey" type="Control" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/jersey" unique_id=1815273834]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("80_b6ruc")
+
+[node name="ColorRect2" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/jersey/lockVer_jersey" unique_id=1900105424]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 107.0
+offset_right = 520.0
+offset_bottom = 337.0
+color = Color(0.08627451, 0.08627451, 0.08627451, 0.65882355)
+
+[node name="TextureRect" type="TextureRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/jersey/lockVer_jersey" unique_id=1112066392]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 200.0
+offset_right = 408.0
+offset_bottom = 240.0
+texture = ExtResource("58_e755i")
+
+[node name="fruit" type="Control" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect" unique_id=1334924821]
+anchors_preset = 0
+offset_left = -82.0
+offset_top = 8.0
+offset_right = -42.0
+offset_bottom = 48.0
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/fruit" unique_id=918469369]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 179.0
+offset_right = 233.0
+offset_bottom = 323.0
+
+[node name="fruits" type="Button" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/fruit" unique_id=1274577155]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 173.0
+offset_right = 242.0
+offset_bottom = 323.0
+icon = ExtResource("60_e755i")
+flat = true
+expand_icon = true
+
+[node name="lockVer_fruit" type="Control" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/fruit" unique_id=2137037976]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("82_155or")
+
+[node name="ColorRect2" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/fruit/lockVer_fruit" unique_id=946998804]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 179.0
+offset_right = 233.0
+offset_bottom = 323.0
+color = Color(0.08627451, 0.08627451, 0.08627451, 0.65882355)
+
+[node name="TextureRect" type="TextureRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/fruit/lockVer_fruit" unique_id=699943307]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 230.0
+offset_right = 189.0
+offset_bottom = 270.0
+texture = ExtResource("58_e755i")
+
+[node name="bowtie" type="Control" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect" unique_id=2048336272]
+anchors_preset = 0
+offset_left = -99.0
+offset_top = -6.0
+offset_right = -59.0
+offset_bottom = 34.0
+
+[node name="ColorRect" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/bowtie" unique_id=2093236548]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 30.0
+offset_right = 448.0
+offset_bottom = 101.0
+
+[node name="bowtie" type="Button" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/bowtie" unique_id=1692752557]
+layout_mode = 0
+offset_left = 309.0
+offset_top = -5.0
+offset_right = 459.0
+offset_bottom = 145.0
+icon = ExtResource("61_ro3en")
+flat = true
+expand_icon = true
+
+[node name="lockVer_bowtie" type="Control" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/bowtie" unique_id=2127335087]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("83_vtx2l")
+
+[node name="ColorRect2" type="ColorRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/bowtie/lockVer_bowtie" unique_id=376224002]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 30.0
+offset_right = 448.0
+offset_bottom = 101.0
+color = Color(0.08627451, 0.08627451, 0.08627451, 0.65882355)
+
+[node name="TextureRect" type="TextureRect" parent="UI_Manager/Control/accessoriesSection/accTab/ColorRect/bowtie/lockVer_bowtie" unique_id=742717955]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 46.0
+offset_right = 404.0
+offset_bottom = 86.0
+texture = ExtResource("58_e755i")
+
+[node name="closebutton" type="Button" parent="UI_Manager/Control/accessoriesSection/accTab" unique_id=999195039]
+layout_mode = 0
+offset_left = 682.0
+offset_right = 732.0
+offset_bottom = 50.0
+theme_override_styles/hover = SubResource("StyleBoxFlat_j2jfr")
+icon = ExtResource("40_j2jfr")
+flat = true
+expand_icon = true
+
+[node name="Control" type="Control" parent="UI_Manager/Control" unique_id=52012689]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1593548477]
+stream = ExtResource("99_vrx01")
+autoplay = true
+
+[connection signal="timeout" from="timers/ppGainTimer" to="gameManager" method="_on_pp_gain_timer_timeout"]
+[connection signal="timeout" from="timers/weatherChangeTimer" to="gameManager" method="_on_weather_change_timer_timeout"]
+[connection signal="timeout" from="timers/basicFertilizerTimer" to="gameManager" method="_on_basic_fertilizer_timer_timeout"]
+[connection signal="timeout" from="timers/basicFertilizerTimer" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control/butt_fert1" method="_on_basic_fertilizer_timer_timeout"]
+[connection signal="timeout" from="timers/mineralMixTimer" to="gameManager" method="_on_mineral_mix_timer_timeout"]
+[connection signal="timeout" from="timers/mineralMixTimer" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control2/butt_fert2" method="_on_mineral_mix_timer_timeout"]
+[connection signal="timeout" from="timers/nitrogenRushTimer" to="gameManager" method="_on_nitrogen_rush_timer_timeout"]
+[connection signal="timeout" from="timers/nitrogenRushTimer" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control3/butt_fert3" method="_on_nitrogen_rush_timer_timeout"]
+[connection signal="timeout" from="timers/toxicCatalystTimer" to="gameManager" method="_on_toxic_catalyst_timer_timeout"]
+[connection signal="timeout" from="timers/toxicCatalystTimer" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control4/butt_fert4" method="_on_toxic_catalyst_timer_timeout"]
+[connection signal="timeout" from="timers/hydroBoosterTimer" to="gameManager" method="_on_hydro_booster_timer_timeout"]
+[connection signal="timeout" from="timers/hydroBoosterTimer" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control5/butt_fert5" method="_on_hydro_booster_timer_timeout"]
+[connection signal="timeout" from="timers/celestialInfusionTimer" to="gameManager" method="_on_celestial_infusion_timer_timeout"]
+[connection signal="timeout" from="timers/celestialInfusionTimer" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control6/butt_fert6" method="_on_celestial_infusion_timer_timeout"]
+[connection signal="pressed" from="UI_Manager/Control/fertilizerSection/fertilizer" to="UI_Manager/Control/fertilizerSection/fetilizerTab" method="_on_fertilizer_pressed"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control/butt_fert1" to="gameManager" method="_on_butt_fert_1_fertilizer_used"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control/butt_fert1" to="timers/basicFertilizerTimer" method="_on_butt_fert_1_fertilizer_used"]
+[connection signal="pressed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control/butt_fert1" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control/butt_fert1" method="_on_pressed"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control2/butt_fert2" to="gameManager" method="_on_butt_fert_2_fertilizer_used"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control2/butt_fert2" to="timers/mineralMixTimer" method="_on_butt_fert_2_fertilizer_used"]
+[connection signal="pressed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control2/butt_fert2" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control2/butt_fert2" method="_on_pressed"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control3/butt_fert3" to="gameManager" method="_on_butt_fert_3_fertilizer_used"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control3/butt_fert3" to="timers/nitrogenRushTimer" method="_on_butt_fert_3_fertilizer_used"]
+[connection signal="pressed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control3/butt_fert3" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control3/butt_fert3" method="_on_pressed"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control4/butt_fert4" to="gameManager" method="_on_butt_fert_4_fertilizer_used"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control4/butt_fert4" to="timers/toxicCatalystTimer" method="_on_butt_fert_4_fertilizer_used"]
+[connection signal="pressed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control4/butt_fert4" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control4/butt_fert4" method="_on_pressed"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control5/butt_fert5" to="gameManager" method="_on_butt_fert_5_fertilizer_used"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control5/butt_fert5" to="timers/hydroBoosterTimer" method="_on_butt_fert_5_fertilizer_used"]
+[connection signal="pressed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control5/butt_fert5" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control5/butt_fert5" method="_on_pressed"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control6/butt_fert6" to="gameManager" method="_on_butt_fert_6_fertilizer_used"]
+[connection signal="fertilizerUsed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control6/butt_fert6" to="timers/celestialInfusionTimer" method="_on_butt_fert_6_fertilizer_used"]
+[connection signal="pressed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control6/butt_fert6" to="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/Control6/butt_fert6" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/fertilizerSection/fetilizerTab/ColorRect/closebutton" to="UI_Manager/Control/fertilizerSection/fetilizerTab" method="_on_closebutton_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/mapSection/map" to="UI_Manager/Control/mapSection/mapSelection" method="_on_map_pressed"]
+[connection signal="mapChanged" from="UI_Manager/Control/mapSection/mapSelection" to="gameManager" method="_on_map_selection_map_changed"]
+[connection signal="pressed" from="UI_Manager/Control/mapSection/mapSelection/Roadside" to="UI_Manager/Control/mapSection/mapSelection" method="_on_roadside_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/mapSection/mapSelection/City" to="UI_Manager/Control/mapSection/mapSelection" method="_on_city_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/mapSection/mapSelection/Grove" to="UI_Manager/Control/mapSection/mapSelection" method="_on_grove_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/mapSection/mapSelection/Desert" to="UI_Manager/Control/mapSection/mapSelection" method="_on_desert_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/mapSection/mapSelection/Plain" to="UI_Manager/Control/mapSection/mapSelection" method="_on_plain_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/mapSection/mapSelection/Hell" to="UI_Manager/Control/mapSection/mapSelection" method="_on_hell_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/mapSection/mapSelection/Heaven" to="UI_Manager/Control/mapSection/mapSelection" method="_on_heaven_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/mapSection/mapSelection/ThePromisedLand" to="UI_Manager/Control/mapSection/mapSelection" method="_on_the_promised_land_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/petSection/pet" to="UI_Manager/Control/petSection/petTab" method="_on_pet_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/petSection/petTab/closepet1" to="UI_Manager/Control/petSection/onKickClicked" method="_on_closepet_1_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/petSection/petTab/closepet2" to="UI_Manager/Control/petSection/onKickClicked" method="_on_closepet_2_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/petSection/petTab/closepet3" to="UI_Manager/Control/petSection/onKickClicked" method="_on_closepet_3_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/petSection/petTab/closepet4" to="UI_Manager/Control/petSection/onKickClicked" method="_on_closepet_4_pressed"]
+[connection signal="item_selected" from="UI_Manager/Control/petSection/petTab/availablePetDropdown" to="UI_Manager/Control/petSection/petTab/availablePetDropdown" method="_on_item_selected"]
+[connection signal="pressed" from="UI_Manager/Control/petSection/petTab/closebutton" to="UI_Manager/Control/petSection/petTab" method="_on_closebutton_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/potSection/pot" to="UI_Manager/Control/potSection/pottab" method="_on_pot_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/potSection/pottab/ColorRect/basicpot/butt_p1" to="UI_Manager/Control/potSection/pottab/ColorRect/basicpot/butt_p1" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/potSection/pottab/ColorRect/copperpot/butt_p2" to="UI_Manager/Control/potSection/pottab/ColorRect/copperpot/butt_p2" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/potSection/pottab/ColorRect/claypot/butt_p3" to="UI_Manager/Control/potSection/pottab/ColorRect/claypot/butt_p3" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/potSection/pottab/ColorRect/mechanicalpot/butt_p4" to="UI_Manager/Control/potSection/pottab/ColorRect/mechanicalpot/butt_p4" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/potSection/pottab/ColorRect/chineseyuanpot/butt_p5" to="UI_Manager/Control/potSection/pottab/ColorRect/chineseyuanpot/butt_p5" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/potSection/pottab/ColorRect/demonicpotofgreed/butt_p6" to="UI_Manager/Control/potSection/pottab/ColorRect/demonicpotofgreed/butt_p6" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/potSection/pottab/ColorRect/angelicpotoflight/butt_p7" to="UI_Manager/Control/potSection/pottab/ColorRect/angelicpotoflight/butt_p7" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/potSection/pottab/ColorRect/potofthepromisedland/butt_p8" to="UI_Manager/Control/potSection/pottab/ColorRect/potofthepromisedland/butt_p8" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/potSection/pottab/ColorRect/closebutton" to="UI_Manager/Control/potSection/pottab" method="_on_closebutton_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/statsSection/stats" to="UI_Manager/Control/statsSection/stattab" method="_on_stats_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/statsSection/stattab/details" to="UI_Manager/Control/statsSection/stattab/statsLabelLeft" method="_on_details_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/statsSection/stattab/details" to="UI_Manager/Control/statsSection/stattab/statsLabelRight" method="_on_details_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/statsSection/stattab/details" to="UI_Manager/Control/statsSection/stattab/simple" method="_on_details_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/statsSection/stattab/closebutton" to="UI_Manager/Control/statsSection/stattab" method="_on_closebutton_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/truckSection/truck" to="UI_Manager/Control/truckSection/ColorRect" method="_on_truck_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/truckSection/ColorRect/airFiltration1/butt_res1" to="UI_Manager/Control/truckSection/ColorRect/airFiltration1/butt_res1" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/truckSection/ColorRect/airFiltration2/butt_res2" to="UI_Manager/Control/truckSection/ColorRect/airFiltration2/butt_res2" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/truckSection/ColorRect/efficientWiring1/butt_res3" to="UI_Manager/Control/truckSection/ColorRect/efficientWiring1/butt_res3" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/truckSection/ColorRect/efficientWiring2/butt_res4" to="UI_Manager/Control/truckSection/ColorRect/efficientWiring2/butt_res4" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/truckSection/ColorRect/advancedGrowLamps/butt_res5" to="UI_Manager/Control/truckSection/ColorRect/advancedGrowLamps/butt_res5" method="_on_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/truckSection/ColorRect/closebutton" to="UI_Manager/Control/truckSection/ColorRect" method="_on_closebutton_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/accessoriesSection/accessories" to="UI_Manager/Control/accessoriesSection/accTab" method="_on_accessories_pressed"]
+[connection signal="pressed" from="UI_Manager/Control/accessoriesSection/accTab/closebutton" to="UI_Manager/Control/accessoriesSection/accTab" method="_on_closebutton_pressed"]
